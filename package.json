@@ -1,0 +1,23 @@
+{
+  "name": "react-social-media-icons",
+  "version": "1.0.0",
+  "description": "React social media icons",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgbliss/react-social-media-icons.git"
+  },
+  "author": "Andrew Bliss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewgbliss/react-social-media-icons/issues"
+  },
+  "homepage": "https://github.com/andrewgbliss/react-social-media-icons#readme",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.4.1"
+  }
+}
