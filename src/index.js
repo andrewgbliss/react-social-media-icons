@@ -28,9 +28,10 @@ export default class SocialMediaIcons extends Component {
           fontSize: this.props.iconSize || '2em',
         }}
       >
-        {icons.map(icon => {
+        {icons.map((icon, i) => {
           return (
             <SocialMediaIcon
+              key={i}
               className={`${this.props.classNamePrefix || 'fab'} ${
                 icon.className
               }`}

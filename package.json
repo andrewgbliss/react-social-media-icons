@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React social media icons",
   "main": "build/index.js",
   "scripts": {
