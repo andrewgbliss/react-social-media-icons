@@ -1,6 +1,6 @@
 {
   "name": "react-social-media-icons",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "React social media icons",
   "main": "build/index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/andrewgbliss/react-social-media-icons#readme",
   "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.4.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.1",
     "webpack": "^2.6.1"
   },
   "devDependencies": {

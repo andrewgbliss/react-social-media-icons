@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const SocialMediaIcon = props => {
@@ -17,32 +17,37 @@ const SocialMediaIcon = props => {
   );
 };
 
-export default class SocialMediaIcons extends Component {
-  render() {
-    const icons = this.props.icons || [];
-    return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          fontSize: this.props.iconSize || '2em',
-        }}
-      >
-        {icons.map((icon, i) => {
-          return (
-            <SocialMediaIcon
-              key={i}
-              className={`${this.props.classNamePrefix || 'fab'} ${
-                icon.className
-              }`}
-              url={icon.url}
-              iconColor={this.props.iconColor || 'blue'}
-            />
-          );
-        })}
-      </div>
-    );
-  }
+const defaultStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  fontSize: '2em',
+};
+
+function SocialMediaIcons(props) {
+  const icons = props.icons || [];
+  let style = {};
+  if (!props.className) {
+    style = defaultStyle;
+  } 
+  return (
+    <div
+      className={props.className}
+      style={style}
+    >
+      {icons.map((icon, i) => {
+        return (
+          <SocialMediaIcon
+            key={i}
+            className={`${props.classNamePrefix || 'fab'} ${
+              icon.className
+            }`}
+            url={icon.url}
+            iconColor={props.iconColor || 'blue'}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 SocialMediaIcons.propTypes = {
@@ -56,3 +61,5 @@ SocialMediaIcon.propTypes = {
   className: PropTypes.string,
   iconColor: PropTypes.string,
 };
+
+export default SocialMediaIcons;
