@@ -11,7 +11,7 @@
 npm install --save react-social-media-icons
 
 # Yarn
-yarn add react-social-media-bar
+yarn add react-social-media-icons
 ```
 
 2. Import the `react-social-media-icons` module.
